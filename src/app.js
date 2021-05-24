@@ -33,7 +33,8 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  console.log(err);
+  res.send('error');
 });
 
 // 로딩 메세지
